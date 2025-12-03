@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="hero">
+        <video autoplay loop muted id="video-background">
+            <source src="vid.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+
+        <nav class="navbar">
+            <span class="logo">Portfolio</span>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+                &#9776;
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Creative Frontend Developer</h1>
+            <p>Building responsive & interactive web experiences</p>
+            <a href="#projects" class="cta-button">View Work</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate developer focused on crafting clean, user-friendly interfaces. I specialize in HTML5, CSS3, and modern JavaScript to bring creative ideas to life on the web.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Technologies</h2>
+            <div class="skills-container">
+                <div class="skill-item">HTML5</div>
+                <div class="skill-item">CSS3 & Flexbox</div>
+                <div class="skill-item">CSS Grid</div>
+                <div class="skill-item">JavaScript ES6</div>
+                <div class="skill-item">Responsive Design</div>
+                <div class="skill-item">DOM Manipulation</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div id="projects-grid">
+                <div class="project-card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>E-Commerce Dashboard</h3>
+                        <p>A responsive dashboard layout using CSS Grid and Flexbox for widget alignment.</p>
+                        <a href="#">View Demo &rarr;</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>Task Master App</h3>
+                        <p>A JavaScript-powered to-do list featuring local storage and DOM manipulation.</p>
+                        <a href="#">View Demo &rarr;</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>Portfolio Template</h3>
+                        <p>A semantic HTML5 portfolio site with a video background and mobile-first navigation.</p>
+                        <a href="#">View Demo &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form id="contact-form-id">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder=" ">
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder=" ">
+                    <label for="email">Your Email</label>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <div id="form-message"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DevPortfolio. Built with HTML, CSS & JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
